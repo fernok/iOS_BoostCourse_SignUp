@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B349F34224BCA75000489523 /* UserInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B349F34124BCA75000489523 /* UserInformation.swift */; };
 		B3D7208124BC2C3C00E19EBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D7208024BC2C3C00E19EBB /* AppDelegate.swift */; };
 		B3D7208324BC2C3C00E19EBB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D7208224BC2C3C00E19EBB /* SceneDelegate.swift */; };
 		B3D7208524BC2C3C00E19EBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D7208424BC2C3C00E19EBB /* ViewController.swift */; };
@@ -15,6 +16,12 @@
 		B3D7208D24BC2C3E00E19EBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3D7208B24BC2C3E00E19EBB /* LaunchScreen.storyboard */; };
 		B3D7209824BC2C3E00E19EBB /* SignUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D7209724BC2C3E00E19EBB /* SignUpTests.swift */; };
 		B3D720A324BC2C3E00E19EBB /* SignUpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D720A224BC2C3E00E19EBB /* SignUpUITests.swift */; };
+		B3D720B524BC431800E19EBB /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D720B424BC431800E19EBB /* NewViewController.swift */; };
+		B3FFC36C24C0194400C73D77 /* TempViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FFC36B24C0194400C73D77 /* TempViewController.swift */; };
+		B3FFC36E24C156AC00C73D77 /* TextImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FFC36D24C156AC00C73D77 /* TextImageViewController.swift */; };
+		B3FFC37024C156BB00C73D77 /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FFC36F24C156BB00C73D77 /* DateViewController.swift */; };
+		B3FFC37224C19A5900C73D77 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FFC37124C19A5900C73D77 /* ImageViewController.swift */; };
+		B3FFC37424C1ECF200C73D77 /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FFC37324C1ECF200C73D77 /* SuccessViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B349F34124BCA75000489523 /* UserInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInformation.swift; sourceTree = "<group>"; };
 		B3D7207D24BC2C3C00E19EBB /* SignUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3D7208024BC2C3C00E19EBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3D7208224BC2C3C00E19EBB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +57,12 @@
 		B3D7209E24BC2C3E00E19EBB /* SignUpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SignUpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3D720A224BC2C3E00E19EBB /* SignUpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpUITests.swift; sourceTree = "<group>"; };
 		B3D720A424BC2C3E00E19EBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3D720B424BC431800E19EBB /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
+		B3FFC36B24C0194400C73D77 /* TempViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempViewController.swift; sourceTree = "<group>"; };
+		B3FFC36D24C156AC00C73D77 /* TextImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextImageViewController.swift; sourceTree = "<group>"; };
+		B3FFC36F24C156BB00C73D77 /* DateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
+		B3FFC37124C19A5900C73D77 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		B3FFC37324C1ECF200C73D77 /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +93,7 @@
 		B3D7207424BC2C3C00E19EBB = {
 			isa = PBXGroup;
 			children = (
+				B349F34124BCA75000489523 /* UserInformation.swift */,
 				B3D7207F24BC2C3C00E19EBB /* SignUp */,
 				B3D7209624BC2C3E00E19EBB /* SignUpTests */,
 				B3D720A124BC2C3E00E19EBB /* SignUpUITests */,
@@ -106,6 +121,12 @@
 				B3D7208924BC2C3E00E19EBB /* Assets.xcassets */,
 				B3D7208B24BC2C3E00E19EBB /* LaunchScreen.storyboard */,
 				B3D7208E24BC2C3E00E19EBB /* Info.plist */,
+				B3D720B424BC431800E19EBB /* NewViewController.swift */,
+				B3FFC36B24C0194400C73D77 /* TempViewController.swift */,
+				B3FFC36D24C156AC00C73D77 /* TextImageViewController.swift */,
+				B3FFC36F24C156BB00C73D77 /* DateViewController.swift */,
+				B3FFC37124C19A5900C73D77 /* ImageViewController.swift */,
+				B3FFC37324C1ECF200C73D77 /* SuccessViewController.swift */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -259,9 +280,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3FFC37024C156BB00C73D77 /* DateViewController.swift in Sources */,
+				B3FFC37224C19A5900C73D77 /* ImageViewController.swift in Sources */,
+				B349F34224BCA75000489523 /* UserInformation.swift in Sources */,
 				B3D7208524BC2C3C00E19EBB /* ViewController.swift in Sources */,
+				B3FFC36C24C0194400C73D77 /* TempViewController.swift in Sources */,
+				B3FFC36E24C156AC00C73D77 /* TextImageViewController.swift in Sources */,
 				B3D7208124BC2C3C00E19EBB /* AppDelegate.swift in Sources */,
 				B3D7208324BC2C3C00E19EBB /* SceneDelegate.swift in Sources */,
+				B3FFC37424C1ECF200C73D77 /* SuccessViewController.swift in Sources */,
+				B3D720B524BC431800E19EBB /* NewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,22 +9,45 @@
 import UIKit
 
 class TempViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    
+    @IBOutlet weak var nameField: UITextField!
+    @IBOutlet weak var ageField: UITextField!
+    @IBOutlet weak var datePicker: UIDatePicker!
+    @IBOutlet weak var dateLabel: UILabel!
+    let dateFormatter: DateFormatter = {
+        let formatter: DateFormatter = DateFormatter()
+        formatter.dateStyle = .medium
+        formatter.timeStyle = .short
+        return formatter
+    }()
+    
+    @IBAction func didDatePickerValueChanged(_ sender: UIDatePicker) {
+        print("value changed")
+        
+        let date: Date = sender.date
+        let dateString: String = self.dateFormatter.string(from: date)
+        
+        self.dateLabel.text = dateString
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func tapView(_ sender: UITapGestureRecognizer) {
+        self.view.endEditing(true)
     }
-    */
+    
+    @IBAction func touchUpSetButton(_ sender: UIButton) {
+//        UserInformation.shared.name = nameField.text
+//        UserInformation.shared.age = ageField.text
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        print("loading")
+        self.datePicker.addTarget(self, action: #selector(self.didDatePickerValueChanged(_:)), for: UIControl.Event.valueChanged)
+        // Do any additional setup after loading the view.
+        
+        let tapGesture: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.tapView(_:)))
+        
+        self.view.addGestureRecognizer(tapGesture)
+    }
 
 }

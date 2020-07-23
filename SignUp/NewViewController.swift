@@ -9,14 +9,30 @@
 import UIKit
 
 class NewViewController: UIViewController {
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var ageLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func popToPrev() {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func dismissModal() {
+        self.dismiss(animated: true, completion: nil)
+    }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+//        self.nameLabel.text = UserInformation.shared.name
+//        self.ageLabel.text = UserInformation.shared.age
+    }
     /*
     // MARK: - Navigation
 
@@ -26,5 +42,6 @@ class NewViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
 
 }

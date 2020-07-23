@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+class UserInformation {
+    static let shared: UserInformation = UserInformation()
+    
+    var id: String?
+    var password: String?
+    var explanation: String?
+    var phone: String?
+//    var image:
+    var dateOfBirth: Date?
+}

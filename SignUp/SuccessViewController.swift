@@ -9,10 +9,16 @@
 import UIKit
 
 class SuccessViewController: UIViewController {
+    @IBOutlet var returnButton: UIButton!
+    @IBOutlet var idLabel: UILabel!
+    
+    @IBAction func touchUpReturnButton(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     
